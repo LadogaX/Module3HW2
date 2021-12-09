@@ -88,10 +88,10 @@ namespace Module3HW2.Services
             return culture;
         }
 
-        public void GroupPersonsBook(PersonsBook personsBook)
+        public void GroupPersonsBook()
         {
             Clear();
-            foreach (var person in personsBook.PeopleList)
+            foreach (var person in PersonsBookService.PersonsBook.PeopleList)
             {
                 Add(person);
             }

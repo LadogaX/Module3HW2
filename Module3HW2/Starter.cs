@@ -14,14 +14,14 @@ namespace Module3HW2
             var personsBook = serviceLetterGroup.PersonsBookService.PersonsBook;
             PersonsBookHelper.FillPersonBook(personsBook);
 
-            serviceLetterGroup.GroupPersonsBook(personsBook);
+            serviceLetterGroup.GroupPersonsBook();
 
             LetterGroupHelper.Display(serviceLetterGroup);
 
             serviceLetterGroup.SaveToFile();
 
             serviceLetterGroup.SetCurrentLanguage("en");
-            serviceLetterGroup.GroupPersonsBook(personsBook);
+            serviceLetterGroup.GroupPersonsBook();
             LetterGroupHelper.Display(serviceLetterGroup);
         }
     }

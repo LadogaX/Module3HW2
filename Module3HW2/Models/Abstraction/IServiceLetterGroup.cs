@@ -18,6 +18,12 @@ namespace Module3HW2.Models.Abstraction
 
         public string DefineCulture(char symbol);
 
-        public void GroupPersonsBook(PersonsBook personsBook);
-    }
+        public void GroupPersonsBook();
+
+        string GetCurrentLanguage();
+
+        void SetCurrentLanguage(string currentLanguage);
+
+        void Clear();
+     }
 }
