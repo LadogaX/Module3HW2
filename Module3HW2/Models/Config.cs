@@ -8,5 +8,7 @@ namespace Module3HW2.Models
 {
     public class Config
     {
+        public string CurrentLanguage { get; set; }
+        public Dictionary<string, List<char>> LanguageSetting { get; set; } = new Dictionary<string, List<char>>();
     }
 }
